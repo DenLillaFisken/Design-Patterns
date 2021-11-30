@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Emphasized(IText text) : base(text)
         {
-            TextStyle = "emphasized";
+            TextStyle = "em";
         }
     }
 }

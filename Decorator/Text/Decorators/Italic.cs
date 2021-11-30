@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Italic(IText text) : base(text)
         {
-            TextStyle = "italic";
+            TextStyle = "i";
         }
     }
 }

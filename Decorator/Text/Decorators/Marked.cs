@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Marked(IText text) : base(text)
         {
-            TextStyle = "marked";
+            TextStyle = "mark";
         }
     }
 }

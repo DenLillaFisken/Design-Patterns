@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Deleted(IText text) : base(text)
         {
-            TextStyle = "deleted";
+            TextStyle = "del";
         }
     }
 }

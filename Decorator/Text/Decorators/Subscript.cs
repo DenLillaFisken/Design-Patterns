@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Subscript(IText text) : base(text)
         {
-            TextStyle = "subscript";
+            TextStyle = "sub";
         }
     }
 }

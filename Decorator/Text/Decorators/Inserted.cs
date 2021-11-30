@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Inserted(IText text) : base(text)
         {
-            TextStyle = "inserted";
+            TextStyle = "ins";
         }
     }
 }

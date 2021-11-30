@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Bold(IText text) : base(text)
         {
-            TextStyle = "bold";
+            TextStyle = "b";
         }
     }
 }

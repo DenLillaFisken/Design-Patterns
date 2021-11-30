@@ -19,7 +19,7 @@ namespace Design_Patterns_Assignment.Decorator.Text
         }
         public string GetTextStyle()
         {
-            return Text.GetTextStyle() + "," + TextStyle;
+            return "<" + TextStyle + ">" + Text.GetTextStyle() + "</" + TextStyle + ">";
         }
     }
 }

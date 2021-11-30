@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Smaller(IText text) : base(text)
         {
-            TextStyle = "smaller";
+            TextStyle = "small";
         }
     }
 }

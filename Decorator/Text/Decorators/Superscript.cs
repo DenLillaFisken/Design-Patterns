@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Superscript(IText text) : base(text)
         {
-            TextStyle = "superscript";
+            TextStyle = "sup";
         }
     }
 }

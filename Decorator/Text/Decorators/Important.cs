@@ -10,7 +10,7 @@ namespace Design_Patterns_Assignment.Decorator.Text.Decorators
     {
         public Important(IText text) : base(text)
         {
-            TextStyle = "important";
+            TextStyle = "strong";
         }
     }
 }

@@ -46,8 +46,8 @@ namespace Design_Patterns_Assignment
                 switch (userInput)
                 {
                     case 'a' or 'A':
-                        string result = HTMLGenerator.TagProcessor(textdecor, textInput);
-                        Console.WriteLine(result);
+                        //string result = HTMLGenerator.TagProcessor(textdecor, textInput);
+                        Console.WriteLine(textdecor.GetTextStyle());
                         //TÖM RESULTAT
                         break;
 
