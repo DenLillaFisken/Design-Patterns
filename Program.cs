@@ -8,10 +8,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Decorator.Run();
+            Dekorator.Run();
             //Repositori.Run();
             //Strategi.Run();
-            Observer.Run();
+            //Observer.Run();
         }     
     }
 }

@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Design_Patterns_Assignment.Decorator.Text;
+using System;
 
 namespace Design_Patterns_Assignment
 {
     class HTMLGenerator
     {
-        internal static string TagProcessor(string tagSelection, string textInput)
+        internal static string TagProcessor(IText textdecor, string textInput)
         {
-            tagSelection = tagSelection.ToLower();
-            var taglist = tagSelection.Split(' ');
+
+            var taglist = textdecor.GetTextStyle().Split(',');
             foreach (var tag in taglist)
             {
-                if (tag=="bold")
+                if (tag == "bold")
                 {
                     textInput = "<b>" + textInput + "</b>";
                 }
