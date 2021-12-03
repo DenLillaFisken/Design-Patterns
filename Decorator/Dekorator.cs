@@ -34,7 +34,7 @@ namespace Design_Patterns_Assignment
             Console.WriteLine("Please enter the text.");
             string textInput = Console.ReadLine();
 
-            var textdecor = FCT.createText();
+            var textdecor = FCT.createText(textInput);
 
             //Main Loop
             while (true)

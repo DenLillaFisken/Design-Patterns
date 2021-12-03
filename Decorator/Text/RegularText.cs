@@ -9,13 +9,16 @@ namespace Design_Patterns_Assignment.Decorator.Text
     public class RegularText: IRegularText
     {
         public string TextStyle { get; private set; }
-        public RegularText()
+        public string Input { get; set; }
+
+        public RegularText(string input)
         {
-            TextStyle = "Regular";
+            TextStyle = "";
+            Input = input;
         }
         public string GetTextStyle()
         {
-            return TextStyle;
+            return Input;
         }
     }
 }

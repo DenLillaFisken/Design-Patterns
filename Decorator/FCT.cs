@@ -9,9 +9,9 @@ namespace Design_Patterns_Assignment.Decorator
 {
     public class FCT
     {
-        public static IText createText()
+        public static IText createText(string input)
         {
-            return new RegularText();
+            return new RegularText(input);
         }
     }
 }
