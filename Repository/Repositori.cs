@@ -64,8 +64,10 @@ namespace Design_Patterns_Assignment
                             RestartMenu();
                         }
                         else
+                        {
                             Console.WriteLine("There is nothing to save");
-                        RestartMenu();
+                            RestartMenu();
+                        }   
                         break;
                     case 'e' or 'E':
                         if (customer != "")
@@ -74,8 +76,10 @@ namespace Design_Patterns_Assignment
                             RestartMenu();
                         }
                         else
+                        {
                             Console.WriteLine("There is nothing to save");
-                        RestartMenu();
+                            RestartMenu();
+                        }   
                         break;
                     case 'f' or 'F':
                         if (animal != "")
@@ -84,8 +88,10 @@ namespace Design_Patterns_Assignment
                             RestartMenu();
                         }
                         else
+                        {
                             Console.WriteLine("There is nothing to save");
-                        RestartMenu();
+                            RestartMenu();
+                        }
                         break;
 
                     case 'x' or 'X':

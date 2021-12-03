@@ -10,9 +10,9 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //Dekorator.Run();
-            //Repositori.Run();
+            Repositori.Run();
             //Strategi.Run();
-            ObserverClass.Run();
+            //ObserverClass.Run();
         }     
     }
 }
