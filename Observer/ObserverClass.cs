@@ -25,8 +25,8 @@ namespace Design_Patterns_Assignment
             // Add Observer
             Email.RegisterObserver(EmailWatcher);
 
-            // Create a timer and set a two second interval.
-            aTimer = new System.Timers.Timer();
+            // Create a timer and set a five second interval.
+            aTimer = new Timer();
             aTimer.Interval = 5000;
 
             // Hook up the Elapsed event for the timer. 
@@ -38,57 +38,34 @@ namespace Design_Patterns_Assignment
             // Start the timer
             aTimer.Enabled = true;
 
-            Console.WriteLine("Press the Enter key to exit the program at any time... ");
-            Console.ReadLine();
+            Console.WriteLine("Press 'U' to unsubscribe, 'S' to Re-subscribe or 'X' to quit program");
+
+            //Check user input to determin what to do
+            string check = Console.ReadLine().ToLower();
+            while (check != "x")
+            {
+                if (check == "u")
+                {
+                    //Unregister Observer
+                    Email.UnRegisterObserver(EmailWatcher);
+                }
+                else if (check == "s")
+                {
+                    //Register Observer
+                    Email.RegisterObserver(EmailWatcher);
+                }
+                else
+                {
+                    Console.WriteLine("That is not a choise");
+                }
+                check = Console.ReadLine().ToLower();
+            }
         }
 
-        private static void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
+        private static void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
-            //Will run the subjectmethod
+            //Will run the subjectmethod that will update the console
             Email.Check();
         }
-        //internal static void Runn()
-        //{
-            //// Draw Menu
-            //Console.WriteLine("----------------------");
-            //Console.WriteLine("   Select an action   ");
-            //Console.WriteLine("----------------------");
-            //Console.WriteLine("U: Update Email");
-            //Console.WriteLine("S: Subscribe/Unsubscribe");
-            //Console.WriteLine("E: Exit Program");
-
-            ////Main Game Loop
-            //while (true)
-            //{
-            //    // Get User Input
-            //    var userInput = Console.ReadKey(true).KeyChar;
-
-            //    switch (userInput)
-            //    {
-            //        case 'u' or 'U':
-            //            subject.notifyObservers();
-            //            break;
-
-            //        case 's' or 'S':
-            //            if (subject.Observers.Contains(EmailWatcher))
-            //            {
-            //                subject.UnRegisterObserver(EmailWatcher);
-            //            }
-            //            else
-            //            {
-            //                subject.RegisterObserver(EmailWatcher);
-            //            }
-            //            break;
-
-            //        case 'e' or 'E':
-            //            Environment.Exit(0);
-            //            break;
-
-            //        default:
-            //            Console.Write("That is not a valid choice");
-            //            break;
-            //    }
-            //}
-        //}
     }
 }
